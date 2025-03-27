@@ -3,11 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SauceController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
+Route::get('/', [SauceController::class, 'index'])->name('sauces.index');
 Route::get('/sauces', [SauceController::class, 'index'])->name('sauces.index');
 Route::get('/sauces/create', [SauceController::class, 'create'])->name('sauces.create');
 Route::post('/sauces', [SauceController::class, 'store'])->name('sauces.store');

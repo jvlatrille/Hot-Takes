@@ -19,6 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Schema::defaultStringLength(191); // pour utiliser mysql
+        Schema::defaultStringLength(191); // pour utiliser mysql parce que sinon ça envoie une erreur
     }
 }

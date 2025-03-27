@@ -100,7 +100,9 @@ class SauceController extends Controller
         return redirect()->route('sauces.index')->with('success', 'Sauce supprimée.');
     }
 
-    // Gérer l'action de like ou dislike sur une sauce
+    /**
+     *  Gérer le like ou dislike sur une sauce
+     */
     public function like(Request $request, $id)
     {
         $sauce = Sauce::findOrFail($id);

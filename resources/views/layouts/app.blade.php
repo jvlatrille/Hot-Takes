@@ -23,13 +23,13 @@
                     <li class="nav-item">
                         <a class="nav-link {{ Request::routeIs('sauces.index') ? 'active' : '' }}"
                            href="{{ route('sauces.index') }}">
-                           {{ __('All Sauces') }}
+                           {{ __('Toute les sauces') }}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::routeIs('sauces.create') ? 'active' : '' }}"
                            href="{{ route('sauces.create') }}">
-                           {{ __('Add sauce') }}
+                           {{ __('Ajouter une sauce') }}
                         </a>
                     </li>
                 </ul>
@@ -49,7 +49,7 @@
                             <li class="nav-item">
                                 <a class="nav-link"
                                    href="{{ route('login') }}">
-                                   {{ __('Login') }}
+                                   {{ __('Se connecter') }}
                                 </a>
                             </li>
                         @endif
@@ -57,7 +57,7 @@
                             <li class="nav-item">
                                 <a class="nav-link"
                                    href="{{ route('register') }}">
-                                   {{ __('Register') }}
+                                   {{ __('Créer un compte') }}
                                 </a>
                             </li>
                         @endif
